@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run --restart always -d --name gm-swish  \
+docker run --restart unless-stopped -d --name gm-swish  \
 -p 8080:80  \
 -v /var/www/html/guide/html/:/var/www/html/ \
 -v /opt/guide/data-swish-e/swish.cgi:/usr/lib/cgi-bin/swish.cgi \
