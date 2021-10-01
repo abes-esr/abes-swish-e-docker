@@ -8,4 +8,4 @@ docker run --restart unless-stopped -d --name gm-swish  \
 -v /opt/guide/data-swish-e/TemplateDefault.pm:/usr/lib/swish-e/perl/SWISH/TemplateDefault.pm \
 -v /opt/guide/data-swish-e/.swishcgi.conf:/usr/lib/cgi-bin/.swishcgi.conf \
 -v /opt/guide/data-swish-e/:/opt/guide/data-swish-e/ \
-abesesr/swish-e-docker:1.1.0
+abesesr/swish-e-docker:1.1.1
