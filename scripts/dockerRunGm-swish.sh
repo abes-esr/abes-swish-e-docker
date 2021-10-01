@@ -1,4 +1,5 @@
 #!/bin/bash
+# Version 1.0
 
 docker run --restart unless-stopped -d --name gm-swish  \
 -p 8080:80  \
