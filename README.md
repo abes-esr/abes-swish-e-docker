@@ -33,3 +33,12 @@ docker stop gm-swish
 docker start gm-swish
 docker logs -f --tail 100 gm-swish
 ```
+
+## Exemple de crontab pour la mise à jour des index
+
+Tous les jours à 19:30 les index sont mis à jour.
+```
+#          Daily updating swish-e indexes
+#
+30 19 * * *  cd ${HOME}/data-swish-e/scripts ; ./dockerExecIndexerGM.sh > dockerExecIndexerGM.log 2>&1
+```
