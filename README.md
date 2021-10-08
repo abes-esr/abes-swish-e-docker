@@ -11,12 +11,12 @@ Il utilise l'image docker générique [swish-e-docker](https://github.com/abes-e
 cd /opt/guide/
 git clone https://github.com/abes-esr/abes-swish-e-docker.git data-swish-e
 
-# ensuite on démarrer le serveur web du moteur de recherche du GM
+# ensuite on démarre le serveur web du moteur de recherche du GM
 cd /opt/guide/data-swish-e/
 ./scripts/dockerRunGm-swish.sh
 
 # ensuite on lance une première indexation des fcher HTML, DOC, PDF (...) du guide méthodo
-# attention cette opération peut être un peu longue
+# attention cette opération est indispensable lors d'une première installation (création des fichiers *.prop) et peut être un peu longue
 # le contenu indexé est positionné ici : /var/www/html/guide/html/
 cd /opt/guide/data-swish-e/
 ./scripts/dockerExecIndexerGM.sh
