@@ -8,4 +8,8 @@ docker run --restart unless-stopped -d --name gm-swish  \
 -v /opt/pod/abes-swish-e-docker/TemplateDefault.pm:/usr/lib/swish-e/perl/SWISH/TemplateDefault.pm \
 -v /opt/pod/abes-swish-e-docker/.swishcgi.conf:/usr/lib/cgi-bin/.swishcgi.conf \
 -v /opt/pod/abes-swish-e-docker/:/opt/pod/abes-swish-e-docker/ \
+--label co.elastic.logs/enabled=true \
+--label co.elastic.logs/processors.add_fields.target= \
+--label co.elastic.logs/processors.add_fields.fields.abes_appli=sudoc-gm-swish \
+--label co.elastic.logs/processors.add_fields.fields.abes_middleware=Httpd \
 abesesr/swish-e-docker:1.1.1
