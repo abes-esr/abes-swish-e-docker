@@ -8,17 +8,17 @@ Il utilise l'image docker générique [swish-e-docker](https://github.com/abes-e
 
 ```
 # on commence par clonner le dépôt git qui contient toute la conf abes
-cd /opt/guide/
-git clone https://github.com/abes-esr/abes-swish-e-docker.git data-swish-e
+cd /opt/pod/
+git clone https://github.com/abes-esr/abes-swish-e-docker.git
 
 # ensuite on démarre le serveur web du moteur de recherche du GM
-cd /opt/guide/data-swish-e/
+cd /opt/pod/abes-swish-e-docker/
 ./scripts/dockerRunGm-swish.sh
 
 # ensuite on lance une première indexation des fcher HTML, DOC, PDF (...) du guide méthodo
 # attention cette opération est indispensable lors d'une première installation (création des fichiers *.prop) et peut être un peu longue
 # le contenu indexé est positionné ici : /var/www/html/guide/html/
-cd /opt/guide/data-swish-e/
+cd /opt/pod/abes-swish-e-docker/
 ./scripts/dockerExecIndexerGM.sh
 
 ```
@@ -40,5 +40,5 @@ Tous les jours à 19:30 les index sont mis à jour.
 ```
 #          Daily updating swish-e indexes
 #
-30 19 * * *  cd ${HOME}/data-swish-e/scripts ; ./dockerExecIndexerGM.sh > dockerExecIndexerGM.log 2>&1
+30 19 * * *  cd /opt/pod/abes-swish-e-docker/scripts ; ./dockerExecIndexerGM.sh > dockerExecIndexerGM.log 2>&1
 ```

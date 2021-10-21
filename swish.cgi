@@ -6,7 +6,7 @@ use strict;
 use lib ( '/usr/lib/swish-e/perl' );
 
 
-my $DEFAULT_CONFIG_FILE = '/opt/guide/data-swish-e/.swishcgi.conf';
+my $DEFAULT_CONFIG_FILE = '/opt/pod/abes-swish-e-docker/.swishcgi.conf';
 
 ###################################################################################
 #
@@ -154,7 +154,7 @@ sub default_config {
         # If you have more than one index to search then specify an array
         # reference.  e.g. swish_index =>[ qw( index1 index2 index3 )],
 
-        swish_index     => '/opt/guide/data-swish-e/index.swish-e',    # Location of your index file
+        swish_index     => '/opt/pod/abes-swish-e-docker/index.swish-e',    # Location of your index file
                                                # See "select_indexes" below for how to
                                                # select more than one index.
 
