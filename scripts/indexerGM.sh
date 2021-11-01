@@ -2,9 +2,9 @@
 # Version 1.0
 
 cd /var/www/html
-swish-e -f /opt/guide/data-swish-e/indexTout.swish-e -c /opt/guide/data-swish-e/swishTout.conf
+swish-e -f /opt/pod/abes-swish-e-docker/indexTout.swish-e -c /opt/pod/abes-swish-e-docker/swishTout.conf
 echo "indexation tout terminee"
-swish-e -f /opt/guide/data-swish-e/indexCatalogage.swish-e -c /opt/guide/data-swish-e/swishCatalogage.conf
+swish-e -f /opt/pod/abes-swish-e-docker/indexCatalogage.swish-e -c /opt/pod/abes-swish-e-docker/swishCatalogage.conf
 echo "indexation catalogage terminee"
-swish-e -f /opt/guide/data-swish-e/indexManuels.swish-e -c /opt/guide/data-swish-e/swishPourManuels.conf
+swish-e -f /opt/pod/abes-swish-e-docker/indexManuels.swish-e -c /opt/pod/abes-swish-e-docker/swishPourManuels.conf
 echo "indexation manuels terminee"
