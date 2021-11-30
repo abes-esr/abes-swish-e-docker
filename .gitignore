@@ -1,2 +1,4 @@
 dockerExecIndexerGM.log
-
+*.swish-e.prop
+*.swish-e
+.vscode/
