@@ -1,8 +1,6 @@
 # abes-swish-e-docker
 
-Ce dépôt contient la configuration spécifique aux besoin Abes pour [le moteur de recherche de son guide méthodologique](http://documentation.abes.fr/cgi-bin/swish.cgi).
-
-Il utilise l'image docker générique [swish-e-docker](https://github.com/abes-esr/swish-e-docker) et génère un conteneur personnalisé pour les besoins de l'Abes.
+Ce dépôt contient la configuration spécifique aux besoins Abes pour [le moteur de recherche de son guide méthodologique](http://documentation.abes.fr/cgi-bin/swish.cgi). Le moteur de recherche est basé sur le logiciel **swish-e** dont l'image docker est la suivante : [swish-e-docker](https://github.com/abes-esr/swish-e-docker).
 
 ## Installation du moteur de recherche du GM
 
